@@ -1,0 +1,4 @@
+income_type = pd.CategoricalDtype( ['No answer', '0', '1000', '3000', '4000', '5000', '6000', '7000', '8000', '10000', '15000', '20000', '25000'], ordered=True)
+
+
+(gss .astype({'YEAR': 'uint16[pyarrow]', 'ID': 'uint16[pyarrow]', 'OCC': 'uint16[pyarrow]', 'HRS1': 'uint8[pyarrow]', 'AGE': 'uint8[pyarrow]', 'MAJOR1': 'category', 'INCOME': income_type, **{col: 'category' for col in ['SEX', 'RACE', 'BORN', 'INCOME06', 'HONEST','TICKET']}}) .INCOME )
